@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>Quizz App</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Aviation Quiz</h1>
+
+        <div class="question active-question" id="qst-1">
+                    <h3>Question 1 of 3</h3>
+                    <h4>Question 1: In civil aviation the altitude is usually given with reference to?</h4>
+                    <div class="choice">
+                        <input type="radio" name="question1" for="one" value="false">
+                        <label for="one">The Surface (ground level)</label>
+                    </div>
+                    
+                    <div class="choice">
+                        <input type="radio" name="question1" for="two"  value="false">
+                        <label for="two">Height of the control tower</label>
+                    </div>
+                    
+                    <div class="choice">
+                        <input type="radio" name="question1" for="three"  value="true">
+                        <label for="three">Sea level</label>
+                    </div>  
+                    
+                    <div class="choice">
+                        <input type="radio" name="question1" for="four"  value="false">
+                        <label for="four">It depends on the country </label>
+                    </div>  
+                    
+                    <button id="next" class="btn">Next ></button>
+
+        </div>
+        
+        
+        <div class="question" id="qst-2">
+
+            <h3>Question 2 of 3</h3>
+
+            <h4>Question 2: When did the deadliest crash in aviation history happened?</h4>
+                     <div class="choice">
+                        <input type="radio" name="question2" for="one" value="false">
+                        <label for="one">January 15, 2009</label>
+                    </div>
+                    
+                    <div class="choice">
+                        <input type="radio" name="question2" for="two" value="false">
+                        <label for="two"> December 22, 2014</label>
+                    </div>
+                    
+                    <div class="choice">
+                        <input type="radio" name="question2" for="three" value="false">
+                        <label for="three"> May 27, 1996</label>
+                    </div>  
+                    
+                    <div class="choice">
+                        <input type="radio" name="question2" for="four" value="true">
+                        <label for="four">March 27, 1977</label>
+                    </div>   
+                    <button id="next" class="btn">Next ></button>
+                    <button class="backBtn"> < Go Back</button>
+
+
+        </div>
+        
+        <div class="question" id="qst-3">
+
+                    <h3>Question 3 of 3</h3>
+
+                    <h4>Question 3: Which of the following models of aircraft is not manufactured by Boeing?</h4>
+                
+                    <div class="choice">
+                        <input type="radio" name="question3" for="one" value="false">
+                        <label for="one">737-800</label>
+                    </div>
+                    
+                    <div class="choice">
+                        <input type="radio" name="question3" for="two" value="false">
+                        <label for="two">777-300ER</label>
+                    </div>
+                    
+                    <div class="choice">
+                        <input type="radio" name="question3" for="three" value="false">
+                        <label for="three">787-8</label>
+                    </div>  
+                    
+                    <div class="choice">
+                        <input type="radio" name="question3" for="four" value="true">
+                        <label for="four">A350-900 XWB</label>
+                    </div>   
+                    
+                    <button id="next" class="btn">Next ></button>
+                    <button class="backBtn"> < Go Back</button>
+
+
+        </div>
+
+        <div class="score hide" >
+            <h1>Your Score is :</h1>
+            <h2 id="score-id"></h2>
+        </div>
+
+        <div class="error hide" id="err">
+            <h3>Select an answer before moving to next question please!!</h3>
+        </div>
+    
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

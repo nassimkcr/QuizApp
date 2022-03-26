@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+html{
+    width: 100%;
+}
+body{
+    background-color: #FAFAFA;
+    width: 100%;
+
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    min-width: 720px;
+}
+.question{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.container > h1{
+    font-size: 2rem;
+    font-style: italic;
+    color: #659dbd;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    margin: 20px auto;
+    margin-bottom: 80px;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3{
+    margin: 10px;
+    text-align: center;
+}
+
+
+h4 {
+    margin: 20px 75px;
+}
+
+.choice{
+    height: 50px;
+    width: 700px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    background-color: rgb(230, 230, 230);
+    
+    
+}
+
+.choice:last-of-type{
+    margin-bottom: 12px;
+}
+
+input{
+    margin-top: 15px;
+
+}
+
+button{
+    padding: 10px;
+    width: 100px;
+    background-color: #59AF50;
+    color: white;
+    border: none;
+    
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#back {
+    margin-left: 40px;
+}
+
+.question{
+    display: none;
+}
+
+.active-question{
+    display: block;
+}
+
+.score {
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    color: white;
+    
+
+}
+
+.score > h1{
+    text-align: center;
+    padding-top: 70px;
+
+}
+.score > h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.error{
+    margin: 70px;
+
+}
+.error > h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: red;
+}
+
+.hide{
+    display: none;
+}
