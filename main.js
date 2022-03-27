@@ -176,4 +176,6 @@ for(let back of backBtn){
         document.getElementById('err').classList.add('hide');
 
 })
+
+console.log(answers)
 } 
