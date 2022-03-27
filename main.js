@@ -15,7 +15,7 @@ function previousQuestion(){
     if(i < 4 ){
         questions[i-1].classList.remove('active-question');
         questions[i-2].classList.add('active-question');
-        answers.splice(i, 1);
+        answers.pop();
         if(indexOfQuestion > 1){
             indexOfQuestion = indexOfQuestion -1;
         }
